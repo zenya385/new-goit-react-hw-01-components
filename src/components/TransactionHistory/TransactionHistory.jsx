@@ -1,3 +1,5 @@
+// import PropTypes from "prop-types";
+
 const TransactionHistory = (items) => (
   <>
     <table className="transaction-history">
@@ -25,4 +27,7 @@ const TransactionHistory = (items) => (
   </>
 );
 
+// TransactionHistory.PropTypes = {
+
+// }
 export default TransactionHistory;
