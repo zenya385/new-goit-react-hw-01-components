@@ -1,8 +1,9 @@
 // import "./App.css";
 // import ReactDOM from "react-dom";
-import Profile from "./components/Profile";
-import Statistic from "./components/Statistics";
-import FriendList from "./components/FriendListItem";
+import Profile from "./components/Profile/Profile";
+import Statistic from "./components/Statistics/Statistics";
+import FriendList from "./components/FriendListItem/FriendListItem";
+import TransactionHistory from "./components/TransactionHistory/TransactionHistory";
 import user from "./data/user.json";
 import data from "./data/data.json";
 import friends from "./data/friends.json";
@@ -18,7 +19,8 @@ function App() {
         stats={user.stats}
       />
       <Statistic title={data.title} stats={data.stats} />
-      <FriendList friends={friends} />;
+      <FriendList friends={friends} />
+      <TransactionHistory />
     </div>
   );
 }
