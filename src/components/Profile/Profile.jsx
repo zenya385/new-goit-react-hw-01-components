@@ -1,10 +1,9 @@
-/* eslint-disable react/no-typos */
 import PropTypes from "prop-types";
 import s from "./Profile.module.css";
 
 const Profile = ({ username, tag, location, avatar, stats }) => (
   <div className={s.wrapper}>
-    <h2 className={s.h2}>User</h2>
+    <h2 className={s.h2}>USER</h2>
     <div className={s.profile}>
       <div className={s.description}>
         <img src={avatar} alt="user avatar" className={s.avatar} />
@@ -25,7 +24,7 @@ const Profile = ({ username, tag, location, avatar, stats }) => (
   </div>
 );
 
-Profile.PropTypes = {
+Profile.propTypes = {
   username: PropTypes.string.isRequired,
   tag: PropTypes.string.isRequired,
   location: PropTypes.string.isRequired,
